@@ -16,10 +16,10 @@ loop do
 	time = Time.new
 	if time.min % 20 == 0 && flg then
 		#ツイートする
-		passion = rand(100) + 1
+		passion = rand(1116) + 1
 		puts passion
-		rankopic << File.new("picture/neruneru#{passion}.png")
-		res = twClient.update_with_media("このツイートはねるねるの#{passion}枚目のスクショです(テスト)", rankopic)
+		rankopic << File.new("ranko/neruneru#{passion}.png")
+		res = twClient.update_with_media("このツイートはパッションの#{passion}枚目のスクショです", rankopic)
 		puts res
 		rankopic.clear
 		flg = false
