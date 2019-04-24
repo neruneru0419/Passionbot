@@ -3,6 +3,9 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    aws-sdk-v1 (1.67.0)
+      json (~> 1.4)
+      nokogiri (~> 1)
     buftok (0.2.0)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
@@ -16,10 +19,16 @@ GEM
       domain_name (~> 0.5)
     http-form_data (2.1.1)
     http_parser.rb (0.6.0)
+    json (1.8.6)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mini_portile2 (2.4.0)
     multipart-post (2.0.0)
     naught (1.1.0)
+    nokogiri (1.10.3)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.3-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
     public_suffix (3.0.3)
     simple_oauth (0.3.1)
     thread_safe (0.3.6)
@@ -44,6 +53,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  aws-sdk-v1
   twitter
 
 BUNDLED WITH
